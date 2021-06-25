@@ -1,3 +1,13 @@
+/*  IMPORTANTE:
+    - Utilização da função de opacidade do rgba;
+
+*/
+
+.modal-wrapper.active{
+    visibility: visible;
+    opacity: 1;
+}
+
 .modal-wrapper {
     position: fixed;
     width: 100vw;
@@ -7,6 +17,9 @@
     display: flex;
 
     background: rgba(4, 9, 17,.8); /*facilita definir a opacidade*/
+
+    visibility: hidden; /*ao usar a propriedade display:none, o elemento deixa de existir */
+    opacity: 0;
 }
 
 .modal-wrapper .modal{

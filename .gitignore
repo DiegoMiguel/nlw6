@@ -1,2 +1,4 @@
 
 Notas.txt
+node_modules/
+src/db/rocketq.sqlite

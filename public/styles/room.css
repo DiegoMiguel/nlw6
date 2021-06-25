@@ -1,3 +1,7 @@
+/* IMPORTANTE:
+  - Como o layout se comporta quando a pergunta é muito grande.
+*/
+
 .content {
   max-width: min(112rem, 90%);
 }
