@@ -1,3 +1,7 @@
+/* Precisa ser executado apenas uma vez
+  - Criação do db e das tabelas
+*/
+
 const Database = require("./config");
 
 const initDb = {
@@ -11,8 +15,9 @@ const initDb = {
 
     await db.exec(`CREATE TABLE questions (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            titulo TEXT,
-            read INT 
+            title TEXT,
+            read INT,
+            room INT
         )`);
 
     await db.close();

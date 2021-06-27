@@ -18,7 +18,7 @@
 /* colocando as cores em variáveis facilita mudanças futuras*/
 html{
     --black: #0D114F;
-    --white: #FAFAFA;
+    --white: #fafafa;
     --red: #E83F5B;
     --light-blue: #E0ECFF;
     --blue: #3485FF;

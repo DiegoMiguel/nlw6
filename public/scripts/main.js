@@ -7,16 +7,13 @@ const modalDescription = document.querySelector('.modal p')
 const modalButton = document.querySelector('.modal button')
 
 
-//Pegar todos os botões que existe com a classe check
+//Pegar todos os botões que existem com a classe check
 const checkButtons = document.querySelectorAll(".actions a.check") 
 
 checkButtons.forEach(button => {
-    //adicionar a escuta
     button.addEventListener("click", handleClick)
 })
 
-
-/*Quando o botão delete for clicado ele abre a modal */
 const deleteButton = document.querySelectorAll(".actions a.delete")
 
 deleteButton.forEach(button => {
@@ -38,6 +35,5 @@ function handleClick(event, check = true){
     const questionId = event.target.dataset.id
     form.setAttribute("action", `/question/${roomId}/${questionId}/${slug}`)
     
-    //abrir modal
     modal.open()
 }
